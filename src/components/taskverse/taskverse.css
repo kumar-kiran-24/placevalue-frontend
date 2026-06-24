@@ -1,0 +1,187 @@
+/* =========================
+   TASKVERSE CUSTOM CLASSES
+========================= */
+
+.text-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.text-gradient-cyan {
+  background: linear-gradient(
+    135deg,
+    #4cc9ff 0%,
+    #00c2ff 60%,
+    #ff9f43 130%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  backdrop-filter: blur(18px) saturate(140%);
+  border-radius: 1.25rem;
+}
+
+.glass-strong {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 22, 40, 0.75) 0%,
+    rgba(7, 17, 31, 0.6) 100%
+  );
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(24px) saturate(160%);
+  border-radius: 1.25rem;
+}
+
+.glow-cyan {
+  box-shadow:
+    0 0 0 1px rgba(0, 194, 255, 0.18),
+    0 20px 60px -20px rgba(0, 194, 255, 0.55),
+    0 0 80px -20px rgba(0, 194, 255, 0.35);
+}
+
+.glow-orange {
+  box-shadow:
+    0 0 0 1px rgba(255, 159, 67, 0.2),
+    0 20px 60px -20px rgba(255, 159, 67, 0.45);
+}
+
+.hairline {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(148, 163, 184, 0.35),
+    transparent
+  );
+  height: 1px;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes tv-spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tv-spin-rev {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes tv-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes tv-pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes tv-stream {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes tv-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* =========================
+   ANIMATION CLASSES
+========================= */
+
+.animate-spin-slow {
+  animation: tv-spin-slow 28s linear infinite;
+}
+
+.animate-spin-rev {
+  animation: tv-spin-rev 40s linear infinite;
+}
+
+.animate-float {
+  animation: tv-float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: tv-pulse-glow 3.2s ease-in-out infinite;
+}
+
+.animate-stream {
+  animation: tv-stream 2.6s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: tv-blink 1.6s ease-in-out infinite;
+}
+
+/* =========================
+   GRID BACKGROUND
+========================= */
+
+.grid-bg {
+  background-image:
+    linear-gradient(
+      rgba(148, 163, 184, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 56px 56px;
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 40%,
+    transparent 75%
+  );
+}

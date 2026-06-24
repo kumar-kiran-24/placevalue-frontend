@@ -1,0 +1,22 @@
+@import "tw-animate-css";
+@import "tailwindcss";
+
+/* ── Minimal reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Root wrapper — full-width, column flex so pages stack naturally */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

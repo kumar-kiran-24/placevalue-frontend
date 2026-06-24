@@ -1,0 +1,62 @@
+/* Typography utility classes */
+
+/* Heading levels */
+.heading-1 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 0.9;
+}
+.heading-2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(2rem, 5.5vw, 3.5rem);
+  line-height: 0.95;
+}
+.heading-3 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  line-height: 1;
+}
+.heading-4,
+.heading-5,
+.heading-6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  line-height: 1.05;
+}
+
+/* Body text */
+.body-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+.body-ui {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-text {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+/* Captions / Helper text */
+.caption {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.875rem;
+}

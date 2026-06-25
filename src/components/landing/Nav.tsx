@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Menu , X} from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logoAsset from "../../assets/logo-main.png";
 import { useState } from "react";
 
@@ -32,54 +32,54 @@ export function Nav() {
         </div>
         <div className="flex items-center gap-2">
 
-  {/* Mobile Hamburger */}
-  <button
-  className="md:hidden p-2"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  {menuOpen ? (
-    <X className="w-6 h-6 text-white" />
-  ) : (
-    <Menu className="w-6 h-6 text-white" />
-  )}
-</button>
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? (
+              <X className="w-6 h-6 text-white" />
+            ) : (
+              <Menu className="w-6 h-6 text-white" />
+            )}
+          </button>
 
-  {/* Desktop Book Demo */}
-  <Link
-    to="/contact"
-    className="hidden md:block text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-background shadow-glow-blue hover:shadow-glow-orange transition-shadow"
-  >
-    Contact
-  </Link>
+          {/* Desktop Book Demo */}
+          <Link
+            to="/contact"
+            className="hidden md:block text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-background shadow-glow-blue hover:shadow-glow-orange transition-shadow"
+          >
+            Contact
+          </Link>
 
-</div>
+        </div>
       </nav>
       {menuOpen && (
-  <div className="md:hidden absolute top-20 left-4 right-4 rounded-3xl border border-white/10 bg-black/95 backdrop-blur-xl p-6">
-    <div className="flex flex-col gap-4">
+        <div className="md:hidden absolute top-20 left-4 right-4 rounded-3xl border border-white/10 bg-black/95 backdrop-blur-xl p-6">
+          <div className="flex flex-col gap-4">
 
-      {links.map((l) => (
-        <Link
-          key={l.href}
-          to={l.href}
-          onClick={() => setMenuOpen(false)}
-          className="py-3 text-center text-white border-b border-white/10"
-        >
-          {l.label}
-        </Link>
-      ))}
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                to={l.href}
+                onClick={() => setMenuOpen(false)}
+                className="py-3 text-center text-white border-b border-white/10"
+              >
+                {l.label}
+              </Link>
+            ))}
 
-      <Link
-        to="/contact"
-        onClick={() => setMenuOpen(false)}
-        className="mt-3 text-center py-3 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-black font-medium"
-      >
-        Contact
-      </Link>
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="mt-3 text-center py-3 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-black font-medium"
+            >
+              Contact
+            </Link>
 
-    </div>
-  </div>
-)}
+          </div>
+        </div>
+      )}
     </header>
   );
 }

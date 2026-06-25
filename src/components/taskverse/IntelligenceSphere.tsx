@@ -71,7 +71,7 @@ export function IntelligenceSphere({
         }}
       />
       {/* faint grid sphere */}
-      <svg viewBox="0 0 400 400" className="absolute inset-0 h-full w-full opacity-60">
+      <svg viewBox="0 0 400 400" className="absolute inset-0 h-full w-full opacity-60 animate-spin-slow" style={{ animationDuration: '100s' }}>
         <defs>
           <radialGradient id="sphereFill" cx="50%" cy="40%" r="60%">
             <stop offset="0%" stopColor="#0A1628" stopOpacity="0.95" />

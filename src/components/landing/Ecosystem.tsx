@@ -77,8 +77,8 @@ export function Ecosystem() {
 
                 {/* Right Face: Branding */}
                <div className="face right">
-                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[var(--brand-blue)] to-[var(--brand-orange)] tracking-widest -rotate-90">
-                    EXPLORE
+                  <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[var(--brand-blue)] to-[var(--brand-orange)] tracking-widest -rotate-90">
+                    CAPABILITIES
                   </span>
                 </div>
 

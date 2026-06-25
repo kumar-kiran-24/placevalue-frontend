@@ -240,9 +240,9 @@ function PlatformOverview() {
       </div>
 
       <div className="flex flex-col items-center text-center max-w-5xl xl:max-w-6xl mx-auto mt-28 px-6">
-        <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7rem] font-normal tracking-tight leading-[1.1] animate-fade-up whitespace-nowrap" style={{ fontFamily: 'var(--font-hero)', fontWeight: 300, animationDelay: "0.1s", opacity: 0.9 }}>
+        <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7rem] font-normal tracking-tight leading-[1.1] animate-fade-up whitespace-normal sm:whitespace-nowrap" style={{ fontFamily: 'var(--font-hero)', fontWeight: 300, animationDelay: "0.1s", opacity: 0.9 }}>
           <span className="block">TASKVERSE</span>
-          <span className="block mt-1">The Intelligence Layer</span>
+          <span className="block mt-1 text-aurora">The Intelligence Layer</span>
           <span className="block mt-1">For Higher Education</span>
         </h1>
         <p className="mt-6 text-lg sm:text-xl text-[var(--slate-1)] max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s", opacity: 0 }}>

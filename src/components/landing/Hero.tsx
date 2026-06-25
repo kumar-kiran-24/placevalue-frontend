@@ -18,7 +18,7 @@ export function Hero() {
             <span className="text-foreground">v3.0</span>
           </div> */}
 
-          <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7rem] font-normal tracking-tight leading-[1.1] animate-fade-up whitespace-nowrap" style={{ fontFamily: 'var(--font-hero)', fontWeight: 300, animationDelay: "0.1s", opacity: 0.9 }}>
+          <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7rem] font-normal tracking-tight leading-[1.1] animate-fade-up whitespace-normal sm:whitespace-nowrap" style={{ fontFamily: 'var(--font-hero)', fontWeight: 300, animationDelay: "0.1s", opacity: 0.9 }}>
             <span className="block">Transform Students Into</span>
             <span className="block text-gradient-brand mt-1">Industry Ready</span>
             <span className="block mt-1">Professionals</span>

@@ -44,13 +44,15 @@ export function Nav() {
             )}
           </button>
 
-          {/* Desktop Book Demo */}
-          <Link
-            to="/contact"
+          {/* Desktop Sign In */}
+          <a
+            href="https://taskverse.placevalue.in/login"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:block text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-background shadow-glow-blue hover:shadow-glow-orange transition-shadow"
           >
-            Contact
-          </Link>
+            Sign In
+          </a>
 
         </div>
       </nav>
@@ -69,13 +71,15 @@ export function Nav() {
               </Link>
             ))}
 
-            <Link
-              to="/contact"
+            <a
+              href="https://taskverse.placevalue.in/login"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="mt-3 text-center py-3 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-black font-medium"
             >
-              Contact
-            </Link>
+              Sign In
+            </a>
 
           </div>
         </div>

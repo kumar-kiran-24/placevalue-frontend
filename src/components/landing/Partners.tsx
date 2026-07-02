@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { SectionHeader } from "./Ecosystem";
+import { Link } from "react-router-dom";
 
 const tiers = [
   {
@@ -79,7 +80,7 @@ export function Partners() {
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-gradient-to-br from-cyan-500/10 via-transparent to-orange-500/10 blur-2xl pointer-events-none" />
 
             {/* Border Animation */}
-            <div className="absolute inset-0 rounded-2xl border border-white/0 group-hover:border-white/10 transition-all duration-500" />
+            <div className="absolute inset-0 rounded-2xl border border-white/0 group-hover:border-white/10 transition-all duration-500 pointer-events-none" />
 
             {/* {t.featured && (
             <div className="absolute -top-3 right-6 text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-orange)] text-background">
@@ -116,9 +117,9 @@ export function Partners() {
               ))}
             </ul>
 
-            <a
-              href="/contact"
-              className={`mt-8 inline-flex items-center justify-center w-full py-3 rounded-xl font-semibold tracking-wide transition-all duration-500 hover:scale-105 hover:brightness-110 ${
+            <Link
+              to="/contact"
+              className={`relative z-10 mt-8 inline-flex items-center justify-center w-full py-3 rounded-xl font-semibold tracking-wide transition-all duration-500 hover:scale-105 hover:brightness-110 ${
                 t.featured
                   ? "bg-[#0a1628] text-[#ffb86c] border border-[#ff8a00]/50 shadow-[0_0_18px_rgba(255,138,0,0.25)] hover:border-[#ff8a00]/90 hover:shadow-[0_0_28px_rgba(255,138,0,0.45)] hover:text-white hover:bg-[#0d1f3c]"
                   : "bg-[#0a1628] text-[#7dd3fc] border border-[#38bdf8]/40 shadow-[0_0_18px_rgba(56,189,248,0.25)] hover:border-[#38bdf8]/80 hover:shadow-[0_0_28px_rgba(56,189,248,0.45)] hover:text-white hover:bg-[#0d1f3c]"
@@ -129,7 +130,7 @@ export function Partners() {
               }}
             >
               Talk to us
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
